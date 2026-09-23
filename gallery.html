@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Gallery | Bai Inga Tomayor Kamara</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body class="portfolio-body">
+    <div class="loader" id="site-loader">
+      <div class="loader-box">
+        <div class="loader-ring"></div>
+        <p class="muted">Loading portfolio…</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html">Bai Inga</a
+        ><button class="menu-btn" id="menu-btn">☰</button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="skills.html">Skills</a><a href="projects.html">Projects</a
+          ><a href="education.html">Education</a><a href="resume.html">CV</a
+          ><a href="blog.html">Blog</a><a href="gallery.html">Gallery</a
+          ><a href="multimedia.html">Media</a><a href="contact.html">Contact</a
+          ><button class="theme-btn" id="theme-btn">🌙</button>
+        </div>
+      </div>
+    </nav>
+    <main class="page">
+      <section class="hero reveal">
+        <span class="eyebrow">Media Gallery</span>
+        <h1>Images, Audios & Videos</h1>
+        <p>Browse my visual and multimedia work using the filters below.</p>
+      </section>
+      <div class="gallery-toolbar reveal">
+        <button class="gallery-filter active" data-filter="all">All</button
+        ><button class="gallery-filter" data-filter="audio">🎵 Audios</button
+        ><button class="gallery-filter" data-filter="image">🖼️ Images</button
+        ><button class="gallery-filter" data-filter="video">🎥 Videos</button>
+      </div>
+      <section class="gallery">
+        <figure class="media-gallery-item reveal" data-type="image">
+          <img
+            data-gallery
+            src="media/images/Best_stands.jpeg"
+            alt="Bai Inga profile photo"
+          /><span class="media-badge">Image</span>
+          <figcaption>Professional Profile</figcaption>
+        </figure>
+        <figure class="media-gallery-item reveal" data-type="image">
+          <img
+            data-gallery
+            src="media/images/Inga&Frs.jpeg"
+            alt="Bai Inga with friends"
+          /><span class="media-badge">Image</span>
+          <figcaption>Personal Moments</figcaption>
+        </figure>
+        <figure class="media-gallery-item reveal" data-type="image">
+          <img
+            data-gallery
+            src="media/images/Practical1.png"
+            alt="Bai Inga creative work"
+          /><span class="media-badge">Image</span>
+          <figcaption>Creative Work</figcaption>
+        </figure>
+        <figure class="media-gallery-item reveal" data-type="audio">
+          <div class="card">
+            <div class="music-note">🎵</div>
+            <h3>Audio Showcase</h3>
+            <audio controls style="width: 100%">
+              <source src="media/audio.mp3/THANK YOU COMING (1).mp3" type="audio/mp3" />
+            </audio>
+          </div>
+          <span class="media-badge">Audio</span>
+          <figcaption>Music / Audio Project</figcaption>
+        </figure>
+        <figure class="media-gallery-item reveal" data-type="video">
+          <div class="card">
+            <h3>Video Showcase</h3>
+            <video
+              controls
+              poster="media/videos.mp4/MedTec.mp4"
+              style="width: 100%; border-radius: 12px"
+            >
+              <source src="media/videos.mp4/MedTec.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <span class="media-badge">Video</span>
+          <figcaption>Video / Multimedia Project</figcaption>
+        </figure>
+        <figure class="media-gallery-item reveal" data-type="audio">
+          <div class="card">
+            <div class="music-note">🎧</div>
+            <h3>Second Audio Slot</h3>
+            <audio controls style="width: 100%">
+              <source src="media/audio.mp3/Unc. sam.mp3" type="audio/mp3" />
+            </audio>
+          </div>
+          <span class="media-badge">Audio</span>
+          <figcaption>Additional Audio Work</figcaption>
+        </figure>
+      </section>
+      <div class="modal" id="image-modal">
+        <div class="modal-content">
+          <button class="modal-close" id="modal-close">×</button
+          ><img id="modal-image" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      © 2026 Bai Inga Tomayor Kamara · Personal Portfolio
+    </footer>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

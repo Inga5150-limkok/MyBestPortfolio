@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Bai Inga</title>
+    <script>
+      tailwind = { darkMode: "class" };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body class="portfolio-body">
+    <div id="loader">
+      <div class="text-center">
+        <div class="spinner mx-auto"></div>
+        <p class="mt-4 font-semibold">Loading portfolio…</p>
+      </div>
+    </div>
+    <nav
+      class="fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur border-b border-gray-200 dark:border-gray-800"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="h-16 flex items-center justify-between">
+          <a href="index.html" class="text-xl font-extrabold gradient-text"
+            >Bai Inga</a
+          >
+          <div class="desktop-nav hidden md:flex items-center gap-7">
+            <a class="nav-link" href="index.html">Home</a
+            ><a class="nav-link active" href="about.html">About</a
+            ><a class="nav-link" href="skills.html">Skills</a
+            ><a class="nav-link" href="projects.html">Projects</a
+            ><a class="nav-link" href="education.html">Education</a
+            ><a class="nav-link" href="contact.html">Contact</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <button
+              id="theme-toggle"
+              aria-label="Toggle dark mode"
+              class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              🌙</button
+            ><button
+              id="menu-btn"
+              aria-label="Open menu"
+              class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 text-xl"
+            >
+              ☰
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800"
+      >
+        <div class="px-4 py-4 grid gap-2">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="skills.html">Skills</a><a href="projects.html">Projects</a
+          ><a href="education.html">Education</a
+          ><a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <main class="pt-16">
+      <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="reveal">
+          <p class="text-blue-600 font-semibold">About Me</p>
+          <h1 class="text-4xl md:text-6xl font-black mt-2">
+            Technology with a creative mindset.
+          </h1>
+          <p class="mt-5 text-lg text-gray-600 dark:text-gray-400 max-w-3xl">
+            I am Bai Inga Tomayor Kamara, a student pursuing a Bachelor's degree
+            in Software Engineering with Multimedia at Limkokwing University of
+            Creative Technology, Sierra Leone Campus. I enjoy combining
+            creativity with technology to build useful digital solutions.
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8 mt-12">
+          <div class="lg:col-span-1">
+            <div
+              class="card bg-white dark:bg-gray-900 rounded-3xl p-7 border border-gray-100 dark:border-gray-800 sticky top-24"
+            >
+              <img
+                src="media/images/Practical1.png"
+                alt="Bai Inga"
+                class="w-44 h-44 mx-auto rounded-full object-cover"
+              />
+              <h2 class="text-2xl font-bold text-center mt-5">
+                Bai Inga Tomayor Kamara
+              </h2>
+              <p class="text-center text-gray-500 mt-2">
+                Software Engineering with Multimedia Student
+              </p>
+              <div class="mt-6 grid grid-cols-2 gap-3 text-center">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-3">
+                  <b>Web</b
+                  ><span class="block text-xs text-gray-500">Development</span>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-3">
+                  <b>Media</b
+                  ><span class="block text-xs text-gray-500">Creative</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-2 space-y-8">
+            <div
+              class="card reveal bg-white dark:bg-gray-900 rounded-3xl p-8 border border-gray-100 dark:border-gray-800"
+            >
+              <h2 class="text-2xl font-bold">What I Enjoy</h2>
+              <div class="grid sm:grid-cols-2 gap-4 mt-6">
+                <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-800">
+                  ✓ Web Development
+                </div>
+                <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-800">
+                  ✓ Graphics Design
+                </div>
+                <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-800">
+                  ✓ Data Analysis
+                </div>
+                <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-800">
+                  ✓ Multimedia Design
+                </div>
+                <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-800">
+                  ✓ User Interface Design
+                </div>
+                <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-800">
+                  ✓ Creative Technology
+                </div>
+                <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-800">
+                  ✓ Problem Solving
+                </div>
+              </div>
+            </div>
+            <div
+              class="card reveal bg-white dark:bg-gray-900 rounded-3xl p-8 border border-gray-100 dark:border-gray-800"
+            >
+              <h2 class="text-2xl font-bold">My Goal</h2>
+              <p class="mt-4 leading-relaxed text-gray-600 dark:text-gray-400">
+                My goal is to become a skilled software engineer and creative
+                full-stack developer who can build modern digital solutions for
+                education, business, and community development. I want to use
+                technology to solve real-world problems and create meaningful
+                user experiences.
+              </p>
+            </div>
+            <div
+              class="card reveal bg-white dark:bg-gray-900 rounded-3xl p-8 border border-gray-100 dark:border-gray-800"
+            >
+              <h2 class="text-2xl font-bold">How I Work</h2>
+              <div class="grid md:grid-cols-3 gap-5 mt-6">
+                <div>
+                  <span class="text-3xl">01</span>
+                  <h3 class="font-bold mt-2">Understand</h3>
+                  <p class="text-sm text-gray-500 mt-1">
+                    Start with the real problem and user needs.
+                  </p>
+                </div>
+                <div>
+                  <span class="text-3xl">02</span>
+                  <h3 class="font-bold mt-2">Build</h3>
+                  <p class="text-sm text-gray-500 mt-1">
+                    Turn ideas into structured, usable software.
+                  </p>
+                </div>
+                <div>
+                  <span class="text-3xl">03</span>
+                  <h3 class="font-bold mt-2">Improve</h3>
+                  <p class="text-sm text-gray-500 mt-1">
+                    Test, learn, refine, and keep growing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-gray-200 dark:border-gray-800 mt-16">
+      <div
+        class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row gap-3 justify-between text-sm text-gray-500"
+      >
+        <span
+          >© 2026 Bai Inga Tomayor Kamara. Built with HTML, CSS, JavaScript &
+          Tailwind CSS.</span
+        ><span>Software Engineering • Multimedia • Creative Technology</span>
+      </div>
+    </footer>
+    <div
+      id="toast"
+      class="toast fixed bottom-6 right-6 z-[80] bg-gray-900 text-white px-5 py-3 rounded-xl shadow-xl"
+    ></div>
+    <button
+      id="back-to-top"
+      class="hidden fixed bottom-6 left-6 z-50 w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700"
+      aria-label="Back to top"
+    >
+      ↑
+    </button>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

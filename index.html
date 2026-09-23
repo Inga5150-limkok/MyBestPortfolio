@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bai Inga Tomayor Kamara — Software Engineering, web development and multimedia portfolio"
+    />
+    <title>Bai Inga Tomayor Kamara | Portfolio</title>
+    <script>
+      tailwind = { darkMode: "class" };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body class="portfolio-body">
+    <div id="loader">
+      <div class="text-center">
+        <div class="spinner mx-auto"></div>
+        <p class="mt-4 font-semibold">Loading portfolio…</p>
+      </div>
+    </div>
+    <nav
+      class="fixed top-0 left-0 w-full z-50 bg-white/85 dark:bg-gray-950/85 backdrop-blur-xl border-b border-gray-200/70 dark:border-gray-800"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="h-16 flex items-center justify-between">
+          <a href="index.html" class="text-xl font-black gradient-text"
+            >Bai Inga</a
+          >
+          <div class="desktop-nav hidden lg:flex items-center gap-6">
+            <a class="nav-link active" href="index.html">Home</a
+            ><a class="nav-link" href="about.html">About</a
+            ><a class="nav-link" href="skills.html">Skills</a
+            ><a class="nav-link" href="projects.html">Projects</a
+            ><a class="nav-link" href="education.html">Education</a
+            ><a class="nav-link" href="blog.html">Blog</a
+            ><a class="nav-link" href="contact.html">Contact</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <button
+              id="theme-toggle"
+              class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
+              aria-label="Switch to dark mode"
+            >
+              🌙</button
+            ><button
+              id="menu-btn"
+              class="lg:hidden p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 text-xl"
+              aria-label="Open menu"
+              aria-expanded="false"
+            >
+              ☰
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800"
+      >
+        <div class="px-4 py-4 grid gap-1">
+          <a
+            class="p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900"
+            href="index.html"
+            >Home</a
+          ><a
+            class="p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900"
+            href="about.html"
+            >About</a
+          ><a
+            class="p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900"
+            href="skills.html"
+            >Skills</a
+          ><a
+            class="p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900"
+            href="projects.html"
+            >Projects</a
+          ><a
+            class="p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900"
+            href="education.html"
+            >Education</a
+          ><a
+            class="p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900"
+            href="blog.html"
+            >Blog</a
+          ><a
+            class="p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900"
+            href="contact.html"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <main class="pt-16">
+      <section class="relative overflow-hidden hero-grid">
+        <div
+          class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-blue-500/10 blur-3xl"
+        ></div>
+        <div
+          class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-purple-500/10 blur-3xl"
+        ></div>
+        <div
+          class="relative max-w-7xl mx-auto px-4 py-20 md:py-28 lg:py-32 grid lg:grid-cols-2 gap-14 items-center"
+        >
+          <div class="reveal">
+            <span
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-950/70 dark:text-blue-300 text-sm font-bold"
+              >● Available for learning & opportunities</span
+            >
+            <p
+              class="mt-7 text-sm uppercase tracking-[.25em] font-bold text-gray-500 dark:text-gray-400"
+            >
+              Hello, I'm
+            </p>
+            <h1 class="mt-2 text-5xl md:text-7xl font-black tracking-tight">
+              Bai Inga<br /><span class="gradient-text">Tomayor Kamara</span>
+            </h1>
+            <div class="mt-5 text-xl md:text-2xl font-semibold">
+              I'm a
+              <span id="typing-text" class="gradient-text typing-caret pr-1"
+                >Web Developer</span
+              >
+            </div>
+            <p
+              class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 max-w-xl"
+            >
+              A Software Engineering with Multimedia student focused on building
+              useful digital experiences through web development, creative
+              technology, system development and problem solving.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a
+                href="projects.html"
+                class="px-6 py-3.5 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 shadow-lg shadow-blue-600/20 transition"
+                >🚀 View My Work</a
+              ><a
+                href="resume.html"
+                class="px-6 py-3.5 rounded-xl bg-gray-900 text-white dark:bg-white dark:text-gray-900 font-bold hover:opacity-90 transition"
+                >📄 My CV</a
+              ><a
+                href="contact.html"
+                class="px-6 py-3.5 rounded-xl border border-gray-300 dark:border-gray-700 font-bold hover:border-blue-500 hover:text-blue-600 transition"
+                >Let's Talk</a
+              >
+            </div>
+            <div class="mt-8 flex flex-wrap gap-5 text-sm font-semibold">
+              <a
+                class="hover:text-blue-600"
+                href="https://github.com/Inga5150-limkok"
+                target="_blank"
+                rel="noopener"
+                >GitHub ↗</a
+              ><a
+                class="hover:text-blue-600"
+                href="https://www.linkedin.com/in/bai-inga-tomayor-kamara-6a7619334/"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn ↗</a
+              ><a
+                class="hover:text-blue-600"
+                href="https://www.instagram.com/k.tomayor/"
+                target="_blank"
+                rel="noopener"
+                >Instagram ↗</a
+              ><a
+                class="hover:text-blue-600"
+                href="https://www.facebook.com/profile.php?id=100085057097084"
+                target="_blank"
+                rel="noopener"
+                >Facebook ↗</a
+              >
+            </div>
+          </div>
+          <div class="reveal flex justify-center lg:justify-end">
+            <div class="relative">
+              <div
+                class="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-r from-blue-500 to-purple-600 blur-2xl opacity-20"
+              ></div>
+              <div
+                class="relative glow rounded-[2.5rem] p-2 bg-white/70 dark:bg-gray-900/70 backdrop-blur"
+              >
+                <img
+                  src="media/images/Profile.jpg"
+                  onerror="this.src = 'images/Practical1.png'"
+                  alt="Bai Inga Tomayor Kamara"
+                  class="w-72 h-80 md:w-[27rem] md:h-[31rem] object-cover rounded-[2rem] float"
+                />
+                <div
+                  class="absolute -bottom-5 -left-5 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl px-5 py-4 shadow-xl"
+                >
+                  <p class="text-xs text-gray-500">Focus</p>
+                  <p class="font-bold">Code • Create • Innovate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-4 -mt-4 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div
+            class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-6 text-center shadow-sm"
+          >
+            <div
+              class="text-3xl font-black stat-number"
+              data-target="5"
+              data-suffix="+"
+            >
+              0
+            </div>
+            <p class="text-sm text-gray-500 mt-1">Project Areas</p>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-6 text-center shadow-sm"
+          >
+            <div
+              class="text-3xl font-black stat-number"
+              data-target="10"
+              data-suffix="+"
+            >
+              0
+            </div>
+            <p class="text-sm text-gray-500 mt-1">Technical Skills</p>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-6 text-center shadow-sm"
+          >
+            <div
+              class="text-3xl font-black stat-number"
+              data-target="3"
+              data-suffix="+"
+            >
+              0
+            </div>
+            <p class="text-sm text-gray-500 mt-1">Creative Areas</p>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-6 text-center shadow-sm"
+          >
+            <div class="text-3xl font-black">2026</div>
+            <p class="text-sm text-gray-500 mt-1">Portfolio Year</p>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-4 py-24">
+        <div class="max-w-2xl reveal">
+          <p class="text-blue-600 font-bold uppercase tracking-wider text-sm">
+            What I do
+          </p>
+          <h2 class="text-4xl md:text-5xl font-black mt-2">
+            Technology with a creative edge.
+          </h2>
+          <p class="mt-5 text-gray-600 dark:text-gray-400 text-lg">
+            My work sits at the intersection of software engineering, multimedia
+            and practical digital solutions.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+          <article
+            class="card reveal bg-white dark:bg-gray-900 p-7 rounded-3xl border border-gray-100 dark:border-gray-800"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center text-2xl"
+            >
+              💻
+            </div>
+            <h3 class="text-xl font-bold mt-5">Software Development</h3>
+            <p class="mt-3 text-gray-600 dark:text-gray-400 leading-7">
+              Programming, web development, databases, system design and
+              software engineering fundamentals.
+            </p>
+          </article>
+          <article
+            class="card reveal bg-white dark:bg-gray-900 p-7 rounded-3xl border border-gray-100 dark:border-gray-800"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-950 flex items-center justify-center text-2xl"
+            >
+              🎨
+            </div>
+            <h3 class="text-xl font-bold mt-5">Multimedia & UI</h3>
+            <p class="mt-3 text-gray-600 dark:text-gray-400 leading-7">
+              Multimedia design, visual communication, user interface concepts
+              and creative technology.
+            </p>
+          </article>
+          <article
+            class="card reveal bg-white dark:bg-gray-900 p-7 rounded-3xl border border-gray-100 dark:border-gray-800"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center text-2xl"
+            >
+              📊
+            </div>
+            <h3 class="text-xl font-bold mt-5">Data & Problem Solving</h3>
+            <p class="mt-3 text-gray-600 dark:text-gray-400 leading-7">
+              Turning information, requirements and ideas into practical digital
+              solutions.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="bg-gray-100 dark:bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4 py-24">
+          <div
+            class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 reveal"
+          >
+            <div>
+              <p
+                class="text-blue-600 font-bold uppercase tracking-wider text-sm"
+              >
+                Featured work
+              </p>
+              <h2 class="text-4xl font-black mt-2">Selected projects</h2>
+            </div>
+            <a href="projects.html" class="font-bold text-blue-600"
+              >View all projects →</a
+            >
+          </div>
+          <div class="grid md:grid-cols-3 gap-6 mt-10">
+            <article
+              class="card reveal bg-white dark:bg-gray-900 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-blue-500 to-indigo-700 flex items-center justify-center text-white text-5xl"
+              >
+                🌐
+              </div>
+              <div class="p-6">
+                <span class="text-xs font-bold text-blue-600"
+                  >WEB DEVELOPMENT</span
+                >
+                <h3 class="font-black text-xl mt-2">
+                  Personal Portfolio Website
+                </h3>
+                <p class="mt-3 text-gray-600 dark:text-gray-400">
+                  Responsive portfolio showcasing skills, projects, education
+                  and contact information.
+                </p>
+              </div>
+            </article>
+            <article
+              class="card reveal bg-white dark:bg-gray-900 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-emerald-500 to-green-700 flex items-center justify-center text-white text-5xl"
+              >
+                🎓
+              </div>
+              <div class="p-6">
+                <span class="text-xs font-bold text-emerald-600"
+                  >SOFTWARE SYSTEM</span
+                >
+                <h3 class="font-black text-xl mt-2">
+                  Student Management System
+                </h3>
+                <p class="mt-3 text-gray-600 dark:text-gray-400">
+                  A project exploring student information, records, software
+                  development and database concepts.
+                </p>
+              </div>
+            </article>
+            <article
+              class="card reveal bg-white dark:bg-gray-900 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800"
+            >
+              <div
+                class="h-48 bg-gradient-to-br from-purple-500 to-fuchsia-700 flex items-center justify-center text-white text-5xl"
+              >
+                🎬
+              </div>
+              <div class="p-6">
+                <span class="text-xs font-bold text-purple-600"
+                  >MULTIMEDIA</span
+                >
+                <h3 class="font-black text-xl mt-2">Multimedia Gallery</h3>
+                <p class="mt-3 text-gray-600 dark:text-gray-400">
+                  A creative space for images, videos, animations and other
+                  multimedia content.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-4 py-24">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="reveal">
+            <p class="text-blue-600 font-bold uppercase tracking-wider text-sm">
+              A little more
+            </p>
+            <h2 class="text-4xl font-black mt-2">
+              Learning, building and improving.
+            </h2>
+            <p class="mt-5 text-gray-600 dark:text-gray-400 leading-8">
+              I am pursuing a Bachelor's degree in Software Engineering with
+              Multimedia at Limkokwing University of Creative Technology, Sierra
+              Leone Campus. My goal is to grow into a skilled software engineer
+              and creative full-stack developer who can build meaningful digital
+              solutions.
+            </p>
+            <div class="mt-7">
+              <a href="about.html" class="font-bold text-blue-600"
+                >Read more about me →</a
+              >
+            </div>
+          </div>
+          <div class="reveal grid grid-cols-2 gap-4">
+            <div
+              class="bg-white dark:bg-gray-900 rounded-3xl p-7 border border-gray-100 dark:border-gray-800"
+            >
+              <div class="text-3xl">🎓</div>
+              <h3 class="font-bold mt-4">Education</h3>
+              <p class="text-sm text-gray-500 mt-2">
+                Software Engineering + Multimedia
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-900 rounded-3xl p-7 border border-gray-100 dark:border-gray-800"
+            >
+              <div class="text-3xl">🏆</div>
+              <h3 class="font-bold mt-4">Certificates</h3>
+              <p class="text-sm text-gray-500 mt-2">
+                Academic milestones & training
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-900 rounded-3xl p-7 border border-gray-100 dark:border-gray-800"
+            >
+              <div class="text-3xl">📰</div>
+              <h3 class="font-bold mt-4">Articles</h3>
+              <p class="text-sm text-gray-500 mt-2">
+                Ideas, learning & projects
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-900 rounded-3xl p-7 border border-gray-100 dark:border-gray-800"
+            >
+              <div class="text-3xl">🎵</div>
+              <h3 class="font-bold mt-4">Multimedia</h3>
+              <p class="text-sm text-gray-500 mt-2">
+                Audio, video & visual work
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-7xl mx-auto px-4 pb-24">
+        <div
+          class="rounded-[2rem] bg-gray-900 dark:bg-black text-white p-8 md:p-12 text-center reveal"
+        >
+          <p class="text-blue-300 font-bold uppercase tracking-wider text-sm">
+            Let's connect
+          </p>
+          <h2 class="text-3xl md:text-5xl font-black mt-3">
+            Have an idea or opportunity?
+          </h2>
+          <p class="mt-4 text-gray-300 max-w-2xl mx-auto">
+            I'm always interested in learning, creating and working on
+            meaningful digital projects.
+          </p>
+          <a
+            href="contact.html"
+            class="inline-block mt-7 px-7 py-3.5 rounded-xl bg-white text-gray-900 font-bold hover:bg-gray-200 transition"
+            >Get in touch →</a
+          >
+        </div>
+      </section>
+      <section
+        class="page-links"
+        style="max-width: 1120px; margin: 0 auto; padding: 30px 20px 60px"
+      >
+        <div class="card">
+          <h2>Explore My Portfolio</h2>
+          <div class="actions">
+            <a class="btn" href="gallery.html">📸 Gallery</a
+            ><a class="btn" href="resume.html">📄 CV</a
+            ><a class="btn" href="experience.html">🧑‍💻 Experience</a
+            ><a class="btn" href="certificates.html">🏆 Certificates</a
+            ><a class="btn" href="testimonials.html">💬 Testimonials</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-gray-200 dark:border-gray-800">
+      <div
+        class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row gap-3 justify-between text-sm text-gray-500"
+      >
+        <span>© 2026 Bai Inga Tomayor Kamara.</span
+        ><span>Software Engineering • Multimedia • Creative Technology</span>
+      </div>
+    </footer>
+    <div
+      id="toast"
+      class="toast fixed bottom-6 right-6 z-[80] bg-gray-900 text-white px-5 py-3 rounded-xl shadow-xl"
+    ></div>
+    <button
+      id="back-to-top"
+      class="hidden fixed bottom-6 left-6 z-50 w-11 h-11 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700"
+      aria-label="Back to top"
+    >
+      ↑
+    </button>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
